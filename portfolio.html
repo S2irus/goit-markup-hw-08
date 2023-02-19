@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <title>homework</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -14,8 +15,271 @@
       rel="stylesheet"
     />
   </head>
-
   <body>
-    
+    <header class="page-header">
+      
+      <div class="container-header">
+        <a href="index.html" class="container__logo container__logo--header"><span class="logo__span">Web</span>Studio</a>
+          <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+
+        <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="index.html">Studio</a></li>
+            <li class="menu__item">
+              <a class="menu__link" href="portfolio.html">Portfolio </a>
+            </li>
+            <li class="menu__item"><a class="menu__link" href="index.html">Contacts</a></li>
+          </ul>
+        </ul>    
+        <ul class="menu menu--contacts"> 
+          <li class="menu__item">
+            <a class="menu__link" href="mailto:info@devstudio.com"><svg class="button__icon no-gap" width="16" height="12">
+              <use href="./images/symbol-defs.svg#icon-envelope"></use></svg>info@devstudio.com</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link link" href="tel:+12127724150"><svg class="button__icon no-gap" width="10" height="16">
+                <use href="./images/symbol-defs.svg#icon-smartphone"></use></svg>+1 212-772-4150</a>
+          </li>
+          
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="container-product__section">
+        <div class="container-product__box">
+          
+            <ul class="container-product__nav">
+              <li><button class="page-button" type="button">All</button></li>
+              <li><button class="page-button" type="button">Web-sites</button></li>
+              <li><button class="page-button" type="button">Apps</button></li>
+              <li><button class="page-button" type="button">Design</button></li>
+              <li><button class="page-button" type="button">Marketing</button></li>
+            </ul>
+          
+            <ul class="grid grid--three">
+              <li class="grid__item">
+                <div class="product__card">
+                  <div class="product__overlay">
+                    <p class="product__overlay-text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+                  </div>
+                    <img width="350px" src="images/technoduck.jpg" alt="Technoduck" />
+                    <h3 class="product__name">Technoduck</h3>
+                    <p class="product__description">Web-site</p>
+                </div>
+              </li>
+              <li class="grid__item">
+                <div class="product__card">
+                   <div class="product__overlay">
+                    <p class="product__overlay-text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+                  </div>
+                  <img width="350px" src="images/poster.jpg" alt="Poster New Orlean vs Golden Star" />
+                  <h3 class="product__name">Poster New Orlean vs Golden Star</h3>
+                  <p class="product__description">Design</p>
+                </div>
+              </li>
+              <li class="grid__item">
+                <div class="product__card">
+                   <div class="product__overlay">
+                    <p class="product__overlay-text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+                  </div>
+                  <img width="350px" src="images/seafood_restaurant.jpg" alt="Seafood Restaurant" />
+                  <h3 class="product__name">Seafood Restaurant</h3>
+                  <p class="product__description">Apps</p>
+                </div>
+                </li>
+              <li class="grid__item">
+                <div class="product__card">
+                   <div class="product__overlay">
+                    <p class="product__overlay-text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+                  </div>
+                  <img width="350px" src="images/project_prime.jpg" alt="Project Prime" />
+                  <h3 class="product__name">Project Prime</h3>
+                  <p class="product__description">Marketing</p>
+                </div>
+              </li>
+              <li class="grid__item">
+                <div class="product__card">
+                   <div class="product__overlay">
+                    <p class="product__overlay-text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+                  </div>
+                  <img width="350px" src="images/project_boxes.jpg" alt="Project Boxes" />
+                  <h3 class="product__name">Project Boxes</h3>
+                  <p class="product__description">Apps</p>
+                </div>
+              </li>
+              <li class="grid__item">
+                <div class="product__card">
+                   <div class="product__overlay">
+                    <p class="product__overlay-text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+                  </div>
+                  <img width="350px" src="images/inspiration.jpg" alt="Inspiration has no Borders" />
+                  <h3 class="product__name">Inspiration has no Borders</h3>
+                  <p class="product__description">Web-site</p>
+                </div>
+              </li>
+              <li class="grid__item">
+                <div class="product__card">
+                   <div class="product__overlay">
+                    <p class="product__overlay-text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+                  </div>
+                  <img width="350px" src="images/limited_edition.jpg" alt="Limited Edition" />
+                  <h3 class="product__name">Limited Edition</h3>
+                  <p class="product__description">Design</p>
+                </div>
+                </li>
+              <li class="grid__item">
+                <div class="product__card">
+                   <div class="product__overlay">
+                    <p class="product__overlay-text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+                  </div>
+                  <img width="350px" src="images/project_lab.jpg" alt="Project LAB" />
+                  <h3 class="product__name">Project LAB</h3>
+                  <p class="product__description">Marketing</p>
+                </div>
+              </li>
+              <li class="grid__item">
+                <div class="product__card">
+                   <div class="product__overlay">
+                    <p class="product__overlay-text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+                  </div>
+                  <img width="350px" src="images/growing_business.jpg" alt="Growing Business" />
+                  <h3 class="product__name">Growing Business</h3>
+                <p class="product__description">Apps</p>
+              </div>
+            </li>
+          </ul>
+        </div>  
+      </section>
+    </main>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu mobile-menu--nav">
+        <li class="mobile-menu__item"><a class="mobile-menu__link" href="index.html">Studio</a></li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="portfolio.html">Portfolio </a>
+        </li>
+        <li class="mobile-menu__item"><a class="mobile-menu__link" href="index.html">Contacts</a></li>
+      </ul>
+    </ul>    
+    <ul class="mobile-menu mobile-menu--contacts">  
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link mobile-menu__link--phone" href="tel:+12127724150">+1 212-772-4150</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link mobile-menu__link--email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+      </li>
+      </ul>
+      <ul class="mobile-menu mobile-menu--social">
+        <li class="mobile-menu__item">Instagram<span class="mobile-menu__span">|</span></li>
+        <li class="mobile-menu__item">Twitter<span class="mobile-menu__span">|</span></li>
+        <li class="mobile-menu__item">Facebook<span class="mobile-menu__span">|</span></li>
+        <li class="mobile-menu__item">LinkedIn</li>
+      </ul>
+    </div>
+    <footer class="page-footer">
+      <div class="page-footer__container">
+        <div class="page-footer__list">
+          <div class="page-footer__adress">
+            <a class="container__logo container__logo--footer" href="index.html"><span class="logo__span">Web</span>Studio</a>
+            <ul class="page-footer__contacts">
+              <li>
+                <a class="page-footer__link" href="https://goo.gl/maps/ijt83v16eL8JcMWo8" target="_blank">695 Park Ave, NY 10065, USA</a>
+              </li>
+              <li>
+                <a class="page-footer__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+              <li>
+                <a class="page-footer__link" href="tel:+12127724150">+1 212-772-4150</a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__social">
+            <h4 class="page-footer__subtitle page-footer__text">FIND US ON</h4>
+            <div class="container-social">
+              <ul class="container-social__list">
+                <li class="container-social__item">
+                  <a href="#" target="_blank" class="container-social__link">
+                    <svg class="container-social__svg">
+                      <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="container-social__item">
+                  <a href="#" target="_blank" class="container-social__link">
+                    <svg class="container-social__svg">
+                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="container-social__item">
+                  <a href="#" target="_blank" class="container-social__link">
+                    <svg class="container-social__svg">
+                      <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="container-social__item">
+                  <a href="#" target="_blank" class="container-social__link">
+                    <svg class="container-social__svg">
+                      <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="page-footer__subscribe">
+            <h4 class="input__title page-footer__text">
+              SUBSCRIBE TO THE NEWSLETTER
+            </h4>
+            <input class="page-footer__input" type="email" name="e-mail" placeholder="E-mail">
+            <button class="page-footer__button" type="submit"> Subscribe
+            <svg class="page-footer__svg"><use href="./images/symbol-defs.svg#icon-send">
+            </use></svg></button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+   
+    <script src="./js/modal.js"></script>
   </body>
 </html>
