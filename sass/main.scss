@@ -1,0 +1,71 @@
+@import 'utils/_vars';
+@import 'components/_page-header.scss';
+@import 'components/_hero-section.scss';
+@import 'components/_about-section.scss';
+@import 'components/_team-section.scss';
+@import 'components/_customer-section.scss';
+@import 'components/_page-footer.scss';
+@import 'components/_social-list.scss';
+@import 'components/_logo.scss';
+@import 'components/_product-list.scss';
+@import 'components/_container.scss';
+@import 'components/_grid.scss';
+@import 'components/_button.scss';
+@import 'components/_mobile-menu.scss';
+@import 'components/_menu.scss';
+
+* {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+body{
+    font-family: 'Roboto', 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    background: var(--white-color);
+    color: var(--subtitle-color);
+}
+
+ul{
+    list-style-type: none;
+    margin-block-start: 0%;
+    margin-block-end: 0%;
+    margin-inline-start: 0%;
+    margin-inline-end: 0%;
+    padding-inline-start: 0%;
+}
+a{
+    text-decoration: none;
+}
+p{
+    margin-block-start: 0%;
+    margin-block-end: 0%;
+    margin-inline-start: 0%;
+    margin-inline-end: 0%;
+}
+.section{
+    display: flex;
+    
+}
+
+.section__heading{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 1.67;
+    text-align: center;
+}
+

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>homework</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="page-header">
+      
+      <div class="container-header">
+        <a href="index.html" class="container__logo container__logo--header"><span class="logo__span">Web</span>Studio</a>
+          <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+
+        <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="index.html">Studio</a></li>
+            <li class="menu__item">
+              <a class="menu__link" href="portfolio.html">Portfolio </a>
+            </li>
+            <li class="menu__item"><a class="menu__link" href="index.html">Contacts</a></li>
+          </ul>
+        </ul>    
+        <ul class="menu menu--contacts"> 
+          <li class="menu__item">
+            <a class="menu__link" href="mailto:info@devstudio.com"><svg class="button__icon no-gap" width="16" height="12">
+              <use href="./images/symbol-defs.svg#icon-envelope"></use></svg>info@devstudio.com</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link link" href="tel:+12127724150"><svg class="button__icon no-gap" width="10" height="16">
+                <use href="./images/symbol-defs.svg#icon-smartphone"></use></svg>+1 212-772-4150</a>
+          </li>
+          
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="container container--hero">
+          <h1 class="section__heading section__heading--hero">
+            EFFECTIVE SOLUTIONS FOR <br />
+            YOUR BUSINESS
+          </h1>
+          <button class="button" type="button">Request our service</button>
+        </div>
+      </section>
+      <section>
+        <div class="container container--four">
+          <ul class="grid grid--four">
+            <li class="grid__item">
+              <div class="svg-card__icon">
+                <svg class="svg-card__svg" widh="65" height="70">
+                  <use href="./images/symbol-defs.svg#icon-antenna"></use>
+                </svg>
+              </div>
+              
+                <h3 class="svg-card__subtitle">ATTENTION TO DETAILS</h3>
+                <p class="svg-card__excerpt">
+                  We go into all the details and processes of your business to develop a customized
+                  solution.
+                </p>
+              
+            </li>
+            <li class="grid__item">
+              <div class="svg-card__icon">
+                <svg class="svg-card__svg" widh="67" height="70">
+                  <use href="./images/symbol-defs.svg#icon-clock"></use>
+                </svg>
+              </div>
+              
+                <h3 class="svg-card__subtitle">PUNCTUALITY</h3>
+                <p class="svg-card__excerpt">
+                  With us, you can feel safe and secure. <br />
+                  An important principle of the company: respect your time and deadlines.
+                </p>
+              
+            </li>
+            <li class="grid__item">
+              <div class="svg-card__icon">
+                <svg class="svg-card__svg" widh="70" height="70">
+                  <use href="./images/symbol-defs.svg#icon-diagram"></use>
+                </svg>
+              </div>
+              
+                <h3 class="svg-card__subtitle">PLANNING</h3>
+                <p class="svg-card__excerpt">
+                  You will be able to observe and participate in every phase of solution development
+                  and implementation.
+                </p>
+              
+            </li>
+            <li class="grid__item">
+              <div class="svg-card__icon">
+                <svg class="svg-card__svg" widh="70" height="70">
+                  <use href="./images/symbol-defs.svg#icon-astronaut"></use>
+                </svg>
+              </div>
+              
+                <h3 class="svg-card__subtitle">MODERN-TECHNOLOGIES</h3>
+                <p class="svg-card__excerpt">
+                  We use innovative tools to solve assigned tasks. It's time to simplify work
+                  processes.
+                </p>
+              
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <div class=" container container--pictures">
+            <h2 class="section__heading">What we do</h2>
+          <ul class="grid grid--three">
+            <li class="grid__item"><img width="300px" src="images/business01.jpg" alt="working space 01" /></li>
+            <li class="grid__item"><img width="300px" src="images/business02.jpg" alt="working space 02" /></li>
+            <li class="grid__item"><img width="300px" src="images/business03.jpg" alt="working space 03" /></li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <div class="container container--dark">
+          <ul class="grid grid--four">
+            <li class="grid__item">
+              <img
+                  class="photo-card__image no-gap"
+                  width="270px"
+                  src="images/Christopher_Walker.jpg"
+                  alt="Christopher Walker at work"
+                />
+                <div class="photo-card__footer">
+                  <h4 class="photo-card__title">Christopher Walker</h4>
+                  <p class="photo-card__excerpt">Product Designer</p>
+                  <div class="container-social">
+                    <ul class="unstyled-list container-social__list">
+                      <li class="container-social__item">
+                        <a href="#" target="_blank" class="container-social__link">
+                          <svg class="container-social__svg">
+                            <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="container-social__item">
+                        <a href="#" target="_blank" class="container-social__link">
+                          <svg class="container-social__svg">
+                            <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="container-social__item">
+                        <a href="#" target="_blank" class="container-social__link">
+                          <svg class="container-social__svg">
+                            <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="container-social__item">
+                        <a href="#" target="_blank" class="container-social__link">
+                          <svg class="container-social__svg">
+                            <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </li>
+            <li class="grid__item">
+              <img
+                  class="photo-card__image no-gap"
+                  width="270px"
+                  src="images/Kylie_Evans.jpg"
+                  alt="Kylie Evans at work"
+                />
+                <div class="photo-card__footer">
+                  <h4 class="photo-card__title">Kylie Evans</h4>
+                  <p class="photo-card__excerpt">Frontend Developer</p>
+                  <div class="container-social">
+                    <ul class="unstyled-list container-social__list">
+                      <li class="container-social__item">
+                        <a href="#" target="_blank" class="container-social__link">
+                          <svg class="container-social__svg">
+                            <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="container-social__item">
+                        <a href="#" target="_blank" class="container-social__link">
+                          <svg class="container-social__svg">
+                            <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="container-social__item">
+                        <a href="#" target="_blank" class="container-social__link">
+                          <svg class="container-social__svg">
+                            <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="container-social__item">
+                        <a href="#" target="_blank" class="container-social__link">
+                          <svg class="container-social__svg">
+                            <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </li>
+            <li class="grid__item">
+              <img
+                  class="photo-card__image no-gap"
+                  width="270px"
+                  src="images/Ryan_Harris.jpg"
+                  alt="Ryan Harris at work"
+                />
+                <div class="photo-card__footer">
+                  <h4 class="photo-card__title">Ryan Harris</h4>
+                  <p class="photo-card__excerpt">Marketing</p>
+                  <div class="container-social">
+                    <ul class="unstyled-list container-social__list">
+                      <li class="container-social__item">
+                        <a href="#" target="_blank" class="container-social__link">
+                          <svg class="container-social__svg">
+                            <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="container-social__item">
+                        <a href="#" target="_blank" class="container-social__link">
+                          <svg class="container-social__svg">
+                            <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="container-social__item">
+                        <a href="#" target="_blank" class="container-social__link">
+                          <svg class="container-social__svg">
+                            <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="container-social__item">
+                        <a href="#" target="_blank" class="container-social__link">
+                          <svg class="container-social__svg">
+                            <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </li>
+            <li class="grid__item">
+              <img
+                  class="photo-card__image no-gap"
+                  width="270px"
+                  src="images/Tyler_Moore.jpg"
+                  alt="Tyler Moore at work"
+                />
+                <div class="photo-card__footer">
+                  <h4 class="photo-card__title">Tyler Moore</h4>
+                  <p class="photo-card__excerpt">UI Designer</p>
+                  <div class="container-social">
+                    <ul class="unstyled-list container-social__list">
+                      <li class="container-social__item">
+                        <a href="#" target="_blank" class="container-social__link">
+                          <svg class="container-social__svg">
+                            <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="container-social__item">
+                        <a href="#" target="_blank" class="container-social__link">
+                          <svg class="container-social__svg">
+                            <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="container-social__item">
+                        <a href="#" target="_blank" class="container-social__link">
+                          <svg class="container-social__svg">
+                            <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="container-social__item">
+                        <a href="#" target="_blank" class="container-social__link">
+                          <svg class="container-social__svg">
+                            <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <div class="container container-customer">
+          <h2 class="section__heading section__heading--customer">Regular Customers</h2>
+          <ul class="grid grid--six">
+            <li class="grid__item"><svg class="grid__svg">
+              <use href="./images/symbol-defs.svg#icon-logo1"></use>
+            </svg></li>
+            <li class="grid__item"><svg class="grid__svg">
+              <use href="./images/symbol-defs.svg#icon-logo2"></use>
+            </svg></li>
+            <li class="grid__item"><svg class="grid__svg">
+              <use href="./images/symbol-defs.svg#icon-logo3"></use>
+            </svg></li>
+            <li class="grid__item"><svg class="grid__svg">
+              <use href="./images/symbol-defs.svg#icon-logo4"></use>
+            </svg></li>
+            <li class="grid__item"><svg class="grid__svg">
+              <use href="./images/symbol-defs.svg#icon-logo5"></use>
+            </svg></li>
+            <li class="grid__item"><svg class="grid__svg">
+              <use href="./images/symbol-defs.svg#icon-logo6"></use>
+            </svg></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu mobile-menu--nav">
+        <li class="mobile-menu__item"><a class="mobile-menu__link" href="index.html">Studio</a></li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="portfolio.html">Portfolio </a>
+        </li>
+        <li class="mobile-menu__item"><a class="mobile-menu__link" href="index.html">Contacts</a></li>
+      </ul>
+    </ul>    
+    <ul class="mobile-menu mobile-menu--contacts">  
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link mobile-menu__link--phone" href="tel:+12127724150">+1 212-772-4150</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link mobile-menu__link--email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+      </li>
+      </ul>
+      <ul class="mobile-menu mobile-menu--social">
+        <li class="mobile-menu__item">Instagram<span class="mobile-menu__span">|</span></li>
+        <li class="mobile-menu__item">Twitter<span class="mobile-menu__span">|</span></li>
+        <li class="mobile-menu__item">Facebook<span class="mobile-menu__span">|</span></li>
+        <li class="mobile-menu__item">LinkedIn</li>
+      </ul>
+    </div>
+    <footer class="page-footer">
+      <div class="page-footer__container">
+        <div class="page-footer__list">
+          <div class="page-footer__adress">
+            <a class="container__logo container__logo--footer" href="index.html"><span class="logo__span">Web</span>Studio</a>
+            <ul class="page-footer__contacts">
+              <li>
+                <a class="page-footer__link" href="https://goo.gl/maps/ijt83v16eL8JcMWo8" target="_blank">695 Park Ave, NY 10065, USA</a>
+              </li>
+              <li>
+                <a class="page-footer__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+              <li>
+                <a class="page-footer__link" href="tel:+12127724150">+1 212-772-4150</a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__social">
+            <h4 class="page-footer__subtitle page-footer__text">FIND US ON</h4>
+            <div class="container-social">
+              <ul class="container-social__list">
+                <li class="container-social__item">
+                  <a href="#" target="_blank" class="container-social__link">
+                    <svg class="container-social__svg">
+                      <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="container-social__item">
+                  <a href="#" target="_blank" class="container-social__link">
+                    <svg class="container-social__svg">
+                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="container-social__item">
+                  <a href="#" target="_blank" class="container-social__link">
+                    <svg class="container-social__svg">
+                      <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="container-social__item">
+                  <a href="#" target="_blank" class="container-social__link">
+                    <svg class="container-social__svg">
+                      <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="page-footer__subscribe">
+            <h4 class="input__title page-footer__text">
+              SUBSCRIBE TO THE NEWSLETTER
+            </h4>
+            <input class="page-footer__input" type="email" name="e-mail" placeholder="E-mail">
+            <button class="page-footer__button" type="submit"> Subscribe
+            <svg class="page-footer__svg"><use href="./images/symbol-defs.svg#icon-send">
+            </use></svg></button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+   
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
