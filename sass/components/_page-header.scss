@@ -14,7 +14,13 @@ align-content: center;
   padding-right: 50px;
 }
 }
-
+@media (min-width: 1024px){
+  .container-header{
+    padding-left:115px;
+    padding-right: 115px;
+    height: 80px;
+  }
+  }
 .container-header {
     width: 100%;
     display: flex;

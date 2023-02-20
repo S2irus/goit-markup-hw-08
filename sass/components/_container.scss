@@ -36,24 +36,14 @@
 }
 @media (min-width: 768px) {
   .container-customer{
-    padding: 0px 15px 60px 15px;
+    padding: 0px 115px 60px 115px;
   }
 }
-/*@media (min-width: 768px) {
-    .container--four {
-      min-width: 480px;
-      max-width: 1024px;
-      margin: 0 auto;}
+@media (min-width: 1024px){
+.container--pictures{
+  padding-left: 115px;
+  padding-right: 115px;
+}
+}
 
-    .container--dark{
-      min-width: 480px;
-      max-width: 1024px;
-      margin: 0 auto; 
-      }
-      .container-customer{
-      min-width: 480px;
-      max-width: 1024px;
-       margin: 0 auto;  
-      }
-    }*/
     
