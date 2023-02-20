@@ -38,3 +38,10 @@
   margin-right: 93px;
 }
 }
+@media (min-width: 1024px) {
+  .container__logo--footer{
+display: flex;
+justify-content: flex-start;
+  }
+}
+
