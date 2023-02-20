@@ -6,6 +6,10 @@
     padding-bottom: 94px;
     padding-top: 94px;
 }
+.container--product{
+  display: flex;
+  flex-direction: column;
+}
 .container--hero{
     flex-direction: column;   
     align-content: center;

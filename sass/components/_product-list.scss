@@ -4,13 +4,15 @@
     margin-right: auto;
     margin-left: auto;
   }
- 
+
   .container-product__nav{
     list-style-type: none;
     display: flex;
     justify-content: center;
     margin-top:94px;
     margin-bottom:50px ;
+    gap: 8px;
+    flex-wrap: wrap;
   }
   .product__card {
     position: relative;
@@ -31,4 +33,13 @@
   }
   .product__overlay-text{
     max-width: 370px;
+  }
+  .button__product{
+    font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding: 6px 22px;
+  display: block;
   }
