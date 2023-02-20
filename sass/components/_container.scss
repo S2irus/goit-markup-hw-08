@@ -35,3 +35,17 @@
     flex-direction: column;
 }
 
+@media (min-width: 768px) {
+    .container--four {
+      max-width: 750px;
+      margin: 0 auto;}
+
+    .container--dark{
+    max-width: 750px;
+    margin: 0 auto; 
+      }
+      .container-customer{
+        max-width: 750px;
+        margin: 0 auto;  
+      }
+    }

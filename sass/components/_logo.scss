@@ -17,10 +17,24 @@
       margin-right: 93px;}
     }
 
-  
+  @media (min-width: 900px){
+    .container__logo--header{
+      margin-right: 93px;
+    }
+  }
+  @media (max-width:767px){
+    .container__logo--header{
+      margin-left: 15px;
+    }
+  }
 .logo__span{
   color: var(--highlight-color);
   }
 .container__logo--footer{
   color: var(--white-color);
+}
+@media (min-width: 768px){
+.container__logo--footer{
+  justify-content: flex-start;
+}
 }

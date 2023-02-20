@@ -3,13 +3,19 @@ display: flex;
 justify-content: center;
 align-content: center;
 }
-@media (max-width: 900px) {
+@media (min-width: 768px) {
   .container-header {
     margin-left: 15px;
   }
 }
+@media (min-width: 900px){
+.container-header{
+  padding: 0px 15px;
+  max-width: 750px;
+}
+}
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   .container-header {
     margin-left: 215px;
     margin-right: 215px;
