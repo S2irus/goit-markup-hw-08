@@ -8,18 +8,13 @@ align-content: center;
     margin-left: 15px;
   }
 }
-@media (min-width: 900px){
+@media (min-width: 768px){
 .container-header{
-  padding: 0px 15px;
+  padding-left:15px;
+  padding-right: 50px;
 }
 }
 
-@media (min-width: 1024px) {
-  .container-header {
-    margin-left: 215px;
-    margin-right: 215px;
-  }
-}
 .container-header {
     width: 100%;
     display: flex;
