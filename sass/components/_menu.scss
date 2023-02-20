@@ -10,12 +10,7 @@
     gap: 10px;
     margin-left: auto;
   }
-  @media (max-width: 1200px) {
-    .menu--contacts {
-     display: flex;
-     flex-direction: column;
-    }
-  }
+  
   @media (max-width: 767px) {
     .menu {
       display: none;
@@ -27,7 +22,16 @@
     color: var(--subtitle-color);
     text-decoration: none;
   }
-  
+  .menu__link--email {
+    color: var(--description-color);
+  }
+  .menu__link--phone{
+    color: var(--description-color); 
+  }
+  .menu__link{
+    text-decoration: none;
+    color: var(--subtitle-color);
+  }
   .menu .link:hover,
   .menu .link:focus {
     text-decoration: underline;
@@ -53,8 +57,14 @@
     .menu-toggle {
       display: none;
     }
+    .menu--contacts{
+      display: flex;
+      flex-direction: column;
+      margin-right: 15px;
+    }
+    
   }
-  @media (max-width: 900px) {
+  @media (max-width: 767px) {
     .menu {
       display: none;
     }

@@ -5,22 +5,25 @@
     flex-wrap: wrap;
     justify-content: center;
     margin: 0%;
-    gap: 30px;
+    gap: $gap;
+    min-width: 480px;
   }
   .grid__item {
     display: flex;
+    flex-direction: column;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: 370px;
+    max-width: 270px;
+   
   }
-  .grid-three{
+  .grid-col-3{
     list-style: none;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
-  .grid--three .grid__item{
+  .grid-col-3 .grid__item{
   flex-basis: 33%;
   min-width: 370px;
   margin-right: 30px;
@@ -29,18 +32,20 @@
   flex-wrap: wrap;
   
   }
-  
-  .grid--four .grid__item {
-    min-width: 140px;
+
+  .grid-col-4 .grid__item {
+    min-width: 270px;
     color: black;
     background-color: white;
     flex-direction: column;
     padding: 0px;
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   }
-  .grid--six .grid__item{
+
+.grid__item--team{
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+  .grid-col-6 .grid__item{
     border: solid;
     border: 1px solid #afb1b8;
     border-radius: 4px;
@@ -48,8 +53,50 @@
     justify-content: center;
     color: var(--icon-color);
   }
+
   .grid__svg{
     width: 106px;
     height: 60px;
     fill: var(--icon-color);
   }
+
+  @each $nrCol in 2,3,4,6 {
+    .grid-Col-#{$nrCol} {
+      .grid__item{
+      $nrGap: $nrCol - 1;
+      $totalGap: $nrGap * $gap;
+      flex-basis: calc((100% - #{$totalGap}px) / 3);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+.grid--1-2-4{
+  .grid__item{
+    flex-basis: calc((100% - $gap) / 2);
+  }
+}
+}
+
+@media (min-width: 1024px) {
+.grid--1-2-4{
+  .grid__item{
+    flex-basis: calc((100% - (3 * $gap)) / 4);
+  }
+}
+}
+
+@media (min-width: 768px) {
+.grid--2-3-6{
+  .grid__item{
+    flex-basis: calc((100% - (2 * $gap)) / 3);
+  }
+}
+} 
+@media (min-width: 1024px) {
+.grid--2-3-6{
+  .grid__item{
+    flex-basis: calc((100% - (5 * $gap)) / 6);
+  }
+}
+}

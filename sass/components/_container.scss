@@ -14,7 +14,7 @@
     background-repeat: no-repeat;
     padding: 0%;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1024px) {
     .container--hero {
      background-repeat: repeat;
     }
@@ -34,18 +34,26 @@
 .container-customer{
     flex-direction: column;
 }
-
 @media (min-width: 768px) {
+  .container-customer{
+    padding: 0px 15px 60px 15px;
+  }
+}
+/*@media (min-width: 768px) {
     .container--four {
-      max-width: 750px;
+      min-width: 480px;
+      max-width: 1024px;
       margin: 0 auto;}
 
     .container--dark{
-    max-width: 750px;
-    margin: 0 auto; 
+      min-width: 480px;
+      max-width: 1024px;
+      margin: 0 auto; 
       }
       .container-customer{
-        max-width: 750px;
-        margin: 0 auto;  
+      min-width: 480px;
+      max-width: 1024px;
+       margin: 0 auto;  
       }
-    }
+    }*/
+    

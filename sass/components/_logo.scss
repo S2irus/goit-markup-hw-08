@@ -12,14 +12,14 @@
   color: var(--subtitle-color);
   justify-content: center;
   }
-  @media (min-width: 1200px) {
-    .container__logo {
-      margin-right: 93px;}
-    }
-
-  @media (min-width: 900px){
+  
+  @media (min-width: 768px){
     .container__logo--header{
       margin-right: 93px;
+    }
+    .container__logo--footer{
+      display: flex;
+      justify-content: center;
     }
   }
   @media (max-width:767px){
@@ -34,7 +34,7 @@
   color: var(--white-color);
 }
 @media (min-width: 768px){
-.container__logo--footer{
-  justify-content: flex-start;
+.container__logo--header{
+  margin-right: 93px;
 }
 }
